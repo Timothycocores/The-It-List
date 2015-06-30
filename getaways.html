@@ -12,22 +12,23 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
+
 <!-- hide from non JavaScript Browsers
 
   Rollimage = new Array()
 
   Rollimage[0]= new Image(121,153)
-  Rollimage[0].src = "brunch.jpg"
+  Rollimage[0].src = "beergarden.jpg"
 
   Rollimage[1] = new Image(121,153)
-  Rollimage[1].src = "brunchHover.jpg"
+  Rollimage[1].src = "beergarden.jpg"
 
   function SwapOut(){
     document.Brunch.src = Rollimage[1].src;
     return true;
   }
 
-  function SwapBack(){
+  function SwapBack(){    
     document.Brunch.src = Rollimage[0].src; 
     return true;
   }
@@ -46,41 +47,25 @@
   .col-sm-3 {
 background-color: #eeeeee;
   }
-  #content {
-    margin-left: 50px;
-    margin-right: 50px;
+  .col-sm-4 {
+padding-left: 50px;
+padding-top: 20px;
+padding-bottom: 20px;
+
   }
+  #content {
+    margin-right: 60px;
+    margin-left: 60px;
+      }
   #logo {
   padding-bottom: -30px;
 }
-.twitterbird {
- margin-bottom: 10px;
- width: 300px;
- height:300px;
- display:block;
- background:transparent url('pancakes.jpg') center center no-repeat;
+#paragraph {
+  margin-left: 60px;
+  margin-right: 60px;
 }
-
-.twitterbird:hover {
-   background-image: url('pancakesHover.jpg');
-.footer {
-  background-color: black;
- width: absolute;
-}
-
-.brunch {
- margin-bottom: 10px;
- width: 300px;
- height:300px;
- display:block;
- background:transparent url('brunch.jpg') center center no-repeat;
-}
-
-.brunch:hover {
-   background-image: url('brunchHover.jpg');
-.footer {
-  background-color: black;
- width: absolute;
+#footer {
+  padding-bottom: -15px;
 }
   </style>
 </head>
@@ -115,8 +100,6 @@ background-color: #eeeeee;
             <li><a href="Foodtours.html">Food Tours</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="cityliving.html">City Living</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
@@ -128,16 +111,6 @@ background-color: #eeeeee;
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Contact</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -163,28 +136,33 @@ background-color: #eeeeee;
      <div id ="paragraph"> <h1>Why trust our choices</h1><p>We have put in time and made sure this is tired and true. We don't base our desicinons off of other peoples suggestions, we test the restuarant our self and order a handful of items off the menu. We don't just base our reccomendation off of the food alone as there are other factors to be considered such as location, service, decor and ambiance.
       <br>
       <br>
-      Our suggestions that we offer are in hopes to make you have a better meal, a better time and to create memories that can be cherished. Bon Apetit.
       </p></div></center>
 
-<P align="center"> 
-<A HREF="http://www.joemaller.com/"
-  onmouseover="SwapOut()"
-  onmouseout="SwapBack()">
-<IMG SRC="brunch.jpg"
-  NAME="Brunch"   
-  WIDTH=300  
-  HEIGHT=300  
-  BORDER=>
-</A> 
-
+      <div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4" style="background-color:#F0F0F0;">.<img src="ldn.jpg"> <h4>Top Beer Gardens in America</h4><h5>We have ranked the best beer gardens around, which we know will inspire you to get outdoors and drink</h5></div>
+    
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="philly.jpg"><h4>Philadelphia, PA</h4><h5>The birthplace of America. Land of cheaps bars, great eats, and history.</h5></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="3746309.jpg"><h4>Montauk, NY</h4><h5>One of New York's great beach getaways is in Montauk, accessible from </h5></div>
+  </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4" style="background-color:#F0F0F0;">.<img src="Siem-Reap-main.jpg"><h4>Siem Reap, Cambodia</h4><h5>Siem Reao is a beautifiul destination wether you are visiting the ruins of Angkor Wat or wandering through the stalls of Angkor Night Market.</div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="sf.jpg"><h4>San Francisco, CA</h4><h5>Home of the Gold Rush, fog and amazing culinary treats. San Franciso is truly a treat that would not want to be missed.</h5></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="stl.jpg"><h4>Saint Louis, Mo</h4><h5>The Gateway to the West, where the beer flows like the water from the Mississippi river currents. You will not go thirsty in this city.</h5></div>
+  </div>
+</div>
+<hr>
 <br>
 <footer>
-  <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
     <ul class="nav nav-tabs">
   <li role="presentation" class="active"><a href="#">About</a></li>
   <li role="presentation"><a href="#">Careers</a></li>
   <li role="presentation"><a href="#">Contact</a></li>
-</ul>
+</ul>  </div>
 </nav>
 </footer>
 </body>
