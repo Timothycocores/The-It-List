@@ -12,15 +12,43 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
+<!-- hide from non JavaScript Browsers
 
+  Rollimage = new Array()
+
+  Rollimage[0]= new Image(121,153)
+  Rollimage[0].src = "brunch.jpg"
+
+  Rollimage[1] = new Image(121,153)
+  Rollimage[1].src = "brunchHover.jpg"
+
+  function SwapOut(){
+    document.Brunch.src = Rollimage[1].src;
+    return true;
+  }
+
+  function SwapBack(){
+    document.Brunch.src = Rollimage[0].src; 
+    return true;
+  }
+
+// - stop hiding          --> 
+</SCRIPT>
   </script>
   <style>
   body {
     margin-bottom: -20px;
+    
+  }
+  .col-sm-6 {
+    padding-left: 20px;
+  }
+  .col-sm-3 {
+background-color: #eeeeee;
   }
   #content {
-    margin-left: 25px;
-    margin-right: 54px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   #logo {
   padding-bottom: -30px;
@@ -30,11 +58,26 @@
  width: 300px;
  height:300px;
  display:block;
- background:transparent url('cityHero.jpg') center center no-repeat;
+ background:transparent url('pancakes.jpg') center center no-repeat;
 }
 
 .twitterbird:hover {
-   background-image: url('cityfont.jpg');
+   background-image: url('pancakesHover.jpg');
+.footer {
+  background-color: black;
+ width: absolute;
+}
+
+.brunch {
+ margin-bottom: 10px;
+ width: 300px;
+ height:300px;
+ display:block;
+ background:transparent url('brunch.jpg') center center no-repeat;
+}
+
+.brunch:hover {
+   background-image: url('brunchHover.jpg');
 .footer {
   background-color: black;
  width: absolute;
@@ -65,13 +108,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Date Night</a></li>
+            <li><a href="dateNight.html">Date Night</a></li>
              <li role="separator" class="divider"></li>
-            <li><a href="#">Getaways</a></li>
+            <li><a href="getaways.html">Getaways</a></li>
              <li role="separator" class="divider"></li>
-            <li><a href="#">Food Tours</a></li>
+            <li><a href="Foodtours.html">Food Tours</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">City Living</a></li>
+            <li><a href="cityliving.html">City Living</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
@@ -104,18 +147,10 @@
 <br>
 <div id="page-wrap">
   <div id="pageTitle">
-  <center><h1>Don't know what to do?</h1>
-    <h2>All of the thinking has been taken out of your adventure. Just click and go!
-    </h2></center>
+  <center><h1>Getaway</h1>
+    <h2>Sometimes it is best to just getaway and relax</h2></center>
     <hr>
   </div>
-<div class="container-fluid">
-  <div class="row">
-
-     <div class="col-sm-3" style="background-color:#ffffff ;"><a href="http://twitter.com/me" class="twitterbird" title="heroLink"></a></div>
-     <div class="col-sm-3" style="background-color:#ffffff ;"><a href="http://twitter.com/me" class="twitterbird" title="heroLink"></a></div>
-     <div class="col-sm-3" style="background-color:#ffffff ;"><a href="http://twitter.com/me" class="twitterbird" title="heroLink"></a></div>
-   <div class="col-sm-3" style="background-color:#ffffff ;"><a href="http://twitter.com/me" class="twitterbird" title="heroLink"></a></div>
 
   </div>
 </div>
@@ -124,14 +159,24 @@
 <br>
 <div class="container-fluid">
   <div class="row">
-     <center><div class="col-sm-6">
-     <div id ="paragraph"> <h1>What we are all about</h1><p>The It List is a list that was created because we were tired of looking at other sites ans their suggestions . All of the outtings and adventures seemed so overdone and stereotypical. The idea behind The It List is to look at what is happening in the your local smal, medium and major cities and to have a different spin on what to do. We provide you with premade itineraries on adventures that you can take either alone, with your family, friends, or significant other. </p></div></center>
+     <center><div class="col-sm-12">
+     <div id ="paragraph"> <h1>Why trust our choices</h1><p>We have put in time and made sure this is tired and true. We don't base our desicinons off of other peoples suggestions, we test the restuarant our self and order a handful of items off the menu. We don't just base our reccomendation off of the food alone as there are other factors to be considered such as location, service, decor and ambiance.
+      <br>
+      <br>
+      Our suggestions that we offer are in hopes to make you have a better meal, a better time and to create memories that can be cherished. Bon Apetit.
+      </p></div></center>
 
+<P align="center"> 
+<A HREF="http://www.joemaller.com/"
+  onmouseover="SwapOut()"
+  onmouseout="SwapBack()">
+<IMG SRC="brunch.jpg"
+  NAME="Brunch"   
+  WIDTH=300  
+  HEIGHT=300  
+  BORDER=>
+</A> 
 
-    <center><div class="col-sm-6"> <img src="screen.jpg"></div></center>
-</div>
-</div>
-</div>
 <br>
 <footer>
   <nav class="navbar navbar-inverse">

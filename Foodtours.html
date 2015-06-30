@@ -11,29 +11,81 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+<!-- hide from non JavaScript Browsers
+
+  Rollimage = new Array()
+
+  Rollimage[0]= new Image(121,153)
+  Rollimage[0].src = "brunch.jpg"
+
+  Rollimage[1] = new Image(121,153)
+  Rollimage[1].src = "brunchHover.jpg"
+
+  function SwapOut(){
+    document.Brunch.src = Rollimage[1].src;
+    return true;
+  }
+
+  function SwapBack(){
+    document.Brunch.src = Rollimage[0].src; 
+    return true;
+  }
+
+// - stop hiding          --> 
+</SCRIPT>
+  </script>
   <style>
-#logo {
+  body {
+    margin-bottom: -20px;
+    
+  }
+  .col-sm-6 {
+    padding-left: 20px;
+  }
+  .col-sm-3 {
+background-color: #eeeeee;
+  }
+  #content {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  #logo {
   padding-bottom: -30px;
 }
-#page-wrap {
-     width: 900px;
-     margin: 0 auto;
+.twitterbird {
+ margin-bottom: 10px;
+ width: 300px;
+ height:300px;
+ display:block;
+ background:transparent url('pancakes.jpg') center center no-repeat;
 }
-.col-sm-3 {
 
-}
-#footer {
+.twitterbird:hover {
+   background-image: url('pancakesHover.jpg');
+.footer {
   background-color: black;
  width: absolute;
- padding-top: 20px;
- padding-bottom: 20px;
- padding-left: 15px;
+}
+
+.brunch {
+ margin-bottom: 10px;
+ width: 300px;
+ height:300px;
+ display:block;
+ background:transparent url('brunch.jpg') center center no-repeat;
+}
+
+.brunch:hover {
+   background-image: url('brunchHover.jpg');
+.footer {
+  background-color: black;
+ width: absolute;
 }
   </style>
-	<title>MAPSee Homepage</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-default">
+</head>
+<body>
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -56,13 +108,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Date Night</a></li>
+            <li><a href="dateNight.html">Date Night</a></li>
              <li role="separator" class="divider"></li>
-            <li><a href="#">Getaways</a></li>
+            <li><a href="getaways.html">Getaways</a></li>
              <li role="separator" class="divider"></li>
-            <li><a href="#">Food Tours</a></li>
+            <li><a href="Foodtours.html">Food Tours</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">City Living</a></li>
+            <li><a href="cityliving.html">City Living</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">One more separated link</a></li>
           </ul>
@@ -90,17 +142,50 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-		<div id="brunchMap">
-<h1>Hot Brunch Spots</h1>
-</div>
-<img src="brunch.png" >
-<div class="brookynMap">
-<h2><u>Brooklyn Brunch Spots</u></h2>
-</div>
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=zCFXgdYYhotQ.kIoK8zqO9TB0" width="640" height="480"></iframe>
-<ol>
-	<li>Robertas Pizza</li>
-	<li>Mayfield</li>
-</ol>
+<!-- page content -->
+<div id="content">
+<br>
+<div id="page-wrap">
+  <div id="pageTitle">
+  <center><h1>Food</h1>
+    <h2>All the best places to eat listed out for you.</h2></center>
+    <hr>
+  </div>
 
+  </div>
+</div>
+<br>
+<center><h2>This is some text</center>
+<br>
+<div class="container-fluid">
+  <div class="row">
+     <center><div class="col-sm-12">
+     <div id ="paragraph"> <h1>Why trust our choices</h1><p>We have put in time and made sure this is tired and true. We don't base our desicinons off of other peoples suggestions, we test the restuarant our self and order a handful of items off the menu. We don't just base our reccomendation off of the food alone as there are other factors to be considered such as location, service, decor and ambiance.
+      <br>
+      <br>
+      Our suggestions that we offer are in hopes to make you have a better meal, a better time and to create memories that can be cherished. Bon Apetit.
+      </p></div></center>
 
+<P align="center"> 
+<A HREF="http://www.joemaller.com/"
+  onmouseover="SwapOut()"
+  onmouseout="SwapBack()">
+<IMG SRC="brunch.jpg"
+  NAME="Brunch"   
+  WIDTH=300  
+  HEIGHT=300  
+  BORDER=>
+</A> 
+
+<br>
+<footer>
+  <nav class="navbar navbar-inverse">
+    <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">About</a></li>
+  <li role="presentation"><a href="#">Careers</a></li>
+  <li role="presentation"><a href="#">Contact</a></li>
+</ul>
+</nav>
+</footer>
+</body>
+</html>
