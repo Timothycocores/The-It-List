@@ -5,6 +5,7 @@
 @media only screen (max-width: 1024px) {
   #div-gpt-ad-1395759257013-0 {display:none;}
 }
+
 </style>
 
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -13,17 +14,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
 
+$(function (){ 
+    var img = 'Click for more portland articles';
+    $("#example").popover({title:'Find More Portland Related Articles', content:img});  
+});
   </script>
   <style>
   body {
     margin-bottom: -20px;
   }
+  .thumbnail {
+    background-color: #F0F0F0;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 25px;
+
+  }
   #content {
-    margin-left: 25px;
-    margin-right: 54px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
   #logo {
   padding-bottom: -30px;
+}
+footer {
+  padding-top: 20px;
 }
 
   </style>
@@ -40,7 +55,7 @@
         <span class="icon-bar"></span>
       </button>
       <div id="logo">
-      <img src="The It List-logo.png" height= "50px" width= "absolute">
+      <img src="images/The It List-logo.png" height= "50px" width= "absolute">
     </div>
     </div>
 
@@ -48,7 +63,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -64,25 +79,10 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="contact.html"><img src="images/evelope.png" height="30px" width="30px"></a></li>
+        </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
@@ -97,26 +97,36 @@
     <hr>
   </div>
 <br>
-<center><h2>This is some text</center>
-<br>
+<div class="container-fluid">
+  <div class="row">
+     <center><div class="col-med-12">
+     <div id ="paragraph"> <h1>What we are all about</h1><p>The It List is a list that was created because we were tired of looking at other sites ans their suggestions . All of the outtings and adventures seemed so overdone and stereotypical. The idea behind The It List is to look at what is happening in the your local smal, medium and major cities and to have a different spin on what to do. We provide you with premade itineraries on adventures that you can take either alone, with your family, friends, or significant other. </p></div></center>
+     <br>
+     <hr>
+     <br>
 <div class="container-fluid">
   <div class="row">
      <center><div class="col-sm-6">
      <div id ="paragraph"> <h1>What we are all about</h1><p>The It List is a list that was created because we were tired of looking at other sites ans their suggestions . All of the outtings and adventures seemed so overdone and stereotypical. The idea behind The It List is to look at what is happening in the your local smal, medium and major cities and to have a different spin on what to do. We provide you with premade itineraries on adventures that you can take either alone, with your family, friends, or significant other. </p></div></center>
 
-
-    <center><div class="col-sm-6"> <img src="screen.jpg"></div></center>
+    <center><div class="col-sm-6"><div class="thumbnail">
+    <h2>Featured</h2>
+      <img src="images/pdx.jpg" alt="...">
+      <div class="caption">
+        <h2>Portland, Oregon</h2>
+        <h5>Where weird is the normal.</h5>
+        <p><a href=#" id="example" class="btn btn-success" rel="popover">Click for more</a><a href="#" class="btn btn-primary" role="button">Read more</a> </p>
 </div>
 </div>
 </div>
-<br>
 <footer>
-  <nav class="navbar navbar-inverse">
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
     <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">About</a></li>
-  <li role="presentation"><a href="#">Careers</a></li>
-  <li role="presentation"><a href="#">Contact</a></li>
-</ul>
+  <li role="presentation"><a href="about.html">About</a></li>
+  <li role="presentation"><a href="jobs.html">Careers</a></li>
+  <li role="presentation"><a href="contact.html">Contact</a></li>
+</ul>  </div>
 </nav>
 </footer>
 </body>

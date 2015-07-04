@@ -4,42 +4,17 @@
   <style>
 @media only screen (max-width: 1024px) {
   #div-gpt-ad-1395759257013-0 {display:none;}
-}
-</style>
-
+  @media only screen and (min-width: 35em) {
+    </style>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-
-<!-- hide from non JavaScript Browsers
-
-  Rollimage = new Array()
-
-  Rollimage[0]= new Image(121,153)
-  Rollimage[0].src = "beergarden.jpg"
-
-  Rollimage[1] = new Image(121,153)
-  Rollimage[1].src = "beergarden.jpg"
-
-  function SwapOut(){
-    document.Brunch.src = Rollimage[1].src;
-    return true;
-  }
-
-  function SwapBack(){    
-    document.Brunch.src = Rollimage[0].src; 
-    return true;
-  }
-
-// - stop hiding          --> 
-</SCRIPT>
+   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </script>
-  <style>
-  body {
+    <style>
+body {
     margin-bottom: -20px;
-    
   }
   .col-sm-6 {
     padding-left: 20px;
@@ -60,6 +35,16 @@ padding-bottom: 20px;
   #logo {
   padding-bottom: -30px;
 }
+
+ h4 {
+  font-family: verdana;
+}
+h5 {
+  font-family: georgia;
+}
+img {
+  border: 2px;
+}
 #paragraph {
   margin-left: 60px;
   margin-right: 60px;
@@ -67,7 +52,7 @@ padding-bottom: 20px;
 #footer {
   padding-bottom: -15px;
 }
-  </style>
+</style>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -81,14 +66,14 @@ padding-bottom: 20px;
         <span class="icon-bar"></span>
       </button>
       <div id="logo">
-      <img src="The It List-logo.png" height= "50px" width= "absolute">
+      <img src="images/The It List-logo.png" height= "50px" width= "absolute">
     </div>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
         <li><a href="#">About</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
@@ -128,8 +113,6 @@ padding-bottom: 20px;
   </div>
 </div>
 <br>
-<center><h2>This is some text</center>
-<br>
 <div class="container-fluid">
   <div class="row">
      <center><div class="col-sm-12">
@@ -138,19 +121,20 @@ padding-bottom: 20px;
       <br>
       </p></div></center>
 
-      <div class="container-fluid">
+      <div class="container">
 <div class="row">
-    <div class="col-sm-4" style="background-color:#F0F0F0;">.<img src="ldn.jpg"> <h4>Top Beer Gardens in America</h4><h5>We have ranked the best beer gardens around, which we know will inspire you to get outdoors and drink</h5></div>
+
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/ldn.jpg" height="300px" width= "300px"> <h4>London, England</h4><h5>Big Ben, Parliment and Fish and Chips, what more could you ask for? Prepare for London. Cheerio!</h5></div>
     
-    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="philly.jpg"><h4>Philadelphia, PA</h4><h5>The birthplace of America. Land of cheaps bars, great eats, and history.</h5></div>
-    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="3746309.jpg"><h4>Montauk, NY</h4><h5>One of New York's great beach getaways is in Montauk, accessible from </h5></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/philly.jpg"><h4>Philadelphia, PA</h4><h5>The birthplace of America. Land of cheaps bars, great eats, and history.</h5></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/3746309.jpg"><h4>Montauk, NY</h4><h5>One of New York's great beach getaways is in Montauk, accessible from </h5></div>
   </div>
 </div>
-<div class="container-fluid">
+<div class="container">
 <div class="row">
-    <div class="col-sm-4" style="background-color:#F0F0F0;">.<img src="Siem-Reap-main.jpg"><h4>Siem Reap, Cambodia</h4><h5>Siem Reao is a beautifiul destination wether you are visiting the ruins of Angkor Wat or wandering through the stalls of Angkor Night Market.</div>
-    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="sf.jpg"><h4>San Francisco, CA</h4><h5>Home of the Gold Rush, fog and amazing culinary treats. San Franciso is truly a treat that would not want to be missed.</h5></div>
-    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="stl.jpg"><h4>Saint Louis, Mo</h4><h5>The Gateway to the West, where the beer flows like the water from the Mississippi river currents. You will not go thirsty in this city.</h5></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;">.<img src="images/Siem-Reap-main.jpg"><h4>Siem Reap, Cambodia</h4><h5>Siem Reao is a beautifiul destination wether you are visiting the ruins of Angkor Wat or wandering through the stalls of Angkor Night Market.</div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/sf.jpg"><h4>San Francisco, CA</h4><h5>Home of the Gold Rush, fog and amazing culinary treats. San Franciso is truly a treat that would not want to be missed.</h5></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/stl.jpg"><h4>Saint Louis, Mo</h4><h5>The Gateway to the West, where the beer flows like the water from the Mississippi river currents. You will not go thirsty in this city.</h5></div>
   </div>
 </div>
 <hr>
@@ -159,7 +143,7 @@ padding-bottom: 20px;
 <nav class="navbar navbar-default navbar-fixed-bottom">
   <div class="container">
     <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">About</a></li>
+  <li role="presentation"><a href="#">About</a></li>
   <li role="presentation"><a href="#">Careers</a></li>
   <li role="presentation"><a href="#">Contact</a></li>
 </ul>  </div>
