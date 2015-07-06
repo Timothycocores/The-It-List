@@ -14,8 +14,8 @@
    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
   </script>
     <style>
-body {
-    margin-bottom: -20px;
+body { 
+padding-bottom: -60px;
   }
   .col-sm-6 {
     padding-left: 20px;
@@ -24,7 +24,7 @@ body {
 background-color: #eeeeee;
   }
   .col-sm-4 {
-padding-left: 50px;
+padding-left: 8px;
 padding-top: 20px;
 padding-bottom: 20px;
 
@@ -62,8 +62,19 @@ img {
   width: 150px
   border-radius: 75px;
 }
+#captions {
+  font-family: helvetica;
+  font-size: 30px;
+}
+#spacing {
+  padding-top: 450px;
+}
 #footer {
+  padding-top: 15px;
   padding-bottom: -15px;
+}
+.navbar-fixed-bottom {
+  padding-bottom: ;
 }
 </style>
 </head>
@@ -130,12 +141,23 @@ img {
       <div>
       <center><div id ="paragraph"> <h3>What we are all about</h3><p>The It List is a list that was created because we were tired of looking at other sites ans their suggestions . All of the outtings and adventures seemed so overdone and stereotypical. The idea behind The It List is to look at what is happening in the your local smal, medium and major cities and to have a different spin on what to do. We provide you with premade itineraries on adventures that you can take either alone, with your family, friends, or significant other. </p></div></center>
       <hr>
-      <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/careers.jpg"> <center><h4>Careers</h4></center></div>
-    
-    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/team.jpg"><center><h4>Team</h4></center></div>
+      <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/careers.jpg"><div id="captions"><center><h4>Careers</h4></center></div></div>
+    <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/team.jpg"><div id="captions"><center><h4>Team</h4></center></div></div>
     <div class="col-sm-4" style="background-color:#F0F0F0;"><img src="images/investor.jpg"><center><h4>Founder</h4></center></div>
     </div>
-<footer>
+    <hr>
+    <div id="spacing">
+    </div>
+    <hr>
+    <footer>
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <ul class="nav nav-tabs">
+  <li class="active"><a href="about.html">About</a></li>
+  <li role="presentation"><a href="jobs.html">Careers</a></li>
+  <li role="presentation"><a href="contact.html">Contact</a></li>
+</ul>  </div>
+</nav>
 </footer>
 </body>
 </html>
